@@ -1,6 +1,6 @@
 # Predicting How Long a Clinical Trial Will Take
 
-**[Live demo](ADD_YOUR_STREAMLIT_URL_HERE)** · [Data notebook](notebooks/Medical_trial_Project.ipynb) · [Neural network notebook](notebooks/NN_from_Scratch_Project.ipynb)
+**[Live demo](https://clinical-trial-duration-abdullah-ismail.streamlit.app/)** · [Data notebook](notebooks/Medical_trial_Project.ipynb) · [Neural network notebook](notebooks/NN_from_Scratch_Project.ipynb)
 
 ![Demo](images/demo_screenshot.png)
 
@@ -195,7 +195,7 @@ more useful than the midpoint.
 
 ## Try it
 
-The [live demo](ADD_YOUR_STREAMLIT_URL_HERE) picks a trial the models never saw
+The [live demo](https://clinical-trial-duration-abdullah-ismail.streamlit.app/) picks a trial the models never saw
 during training, shows three predictions, and reveals the actual duration. A
 tick shows whether the truth fell inside each model's range. Roughly eight in
 ten should.
@@ -249,4 +249,4 @@ notebooks/
   NN_from_Scratch_Project.ipynb  the neural network, derived and verified
 ```
 
-**Tools:** Python, PostgreSQL, pandas, NumPy, scikit-learn, Keras, Streamlit
+**Tools:** Python, SQL, pandas, NumPy, scikit-learn, Keras, Streamlit
