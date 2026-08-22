@@ -131,15 +131,13 @@ trials it had never seen.
 The best model explains about **42% of the variation**, a 24% improvement in
 error over the baseline.
 
-### Every model performs about the same
-
-Plain linear regression to a tuned neural network spans seven percentage
-points.
+### All models land within seven percentage points
 
 ![Predicted vs actual](images/predicted_vs_actual.png)
 
 Each panel plots what a model predicted against what happened. A perfect model
-would put every point on the diagonal. All seven clouds look nearly identical.
+would put every point on the diagonal. All seven clouds look nearly identical,
+which is why a single number is not the right output here.
 
 ### One rescaling helped every model
 
