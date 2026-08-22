@@ -120,7 +120,9 @@ trials it had never seen.
 |---|---|
 | Always predict the average | 0.000 |
 | Linear regression | 0.345 |
-| Linear + engineered features | 0.358 |
+| Linear + age² | 0.348 |
+| Linear + log(enrollment) | 0.355 |
+| Linear + log + age² | 0.358 |
 | **Neural network, from scratch** | **0.361** |
 | scikit-learn neural network | 0.400 |
 | Keras neural network | 0.409 |
@@ -128,7 +130,7 @@ trials it had never seen.
 
 ![Model comparison](images/model_comparison.png)
 
-The best model explains about **42% of the variation**, a 24% improvement in
+The best model explains about **42% of the variation**, a 23.5% improvement in
 error over the baseline.
 
 ### All models land within seven percentage points
