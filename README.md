@@ -1,6 +1,6 @@
 # Predicting How Long a Clinical Trial Will Take
 
-**[Live demo](https://clinical-trial-duration-abdullah-ismail.streamlit.app/)** · [Data notebook](notebooks/Medical_trial_Project.ipynb) · [Neural network notebook](notebooks/NN_from_Scratch_Project.ipynb)
+**[Live demo](https://clinical-trial-duration-abdullah-ismail.streamlit.app/)** · [Data notebook](notebooks/Medical_trial_Project.ipynb) · [Neural network notebook](notebooks/NN_from_Scratch_Project.ipynb) · [Handwritten derivations](derivations/)
 
 ![Demo](images/demo_screenshot.png)
 
@@ -13,6 +13,11 @@ planned for two years can run four.
 
 This project asks: **using only what a sponsor records on the day a trial is
 registered, how long will that trial take?**
+
+The neural network at the centre of it was built from scratch in NumPy, with
+every derivative worked out by hand before any code was written. Those
+handwritten pages are in [`derivations/`](derivations/), alongside the
+numerical check that confirms the formulas are correct.
 
 ### Why it matters
 
@@ -106,6 +111,10 @@ by hand, no automatic differentiation. Correctness was checked by nudging
 individual weights, measuring how the error actually changed, and comparing
 that against the hand-derived formulas. **They agreed to nine decimal places on
 all three layers.**
+
+The full derivation is in [`derivations/`](derivations/). `backprop_derivation.pdf`
+works through the chain rule layer by layer, and `gradient_check_w3.pdf` shows
+the numerical verification on a single weight.
 
 ### Ranges
 
@@ -244,6 +253,10 @@ README.md              this file
 app.py                 the Streamlit demo
 demo_data.npz          predictions and ranges the demo reads
 requirements.txt       dependencies
+derivations/
+  backprop_derivation.pdf        the chain rule, worked out by hand
+  gradient_check_w3.pdf          numerical verification on one weight
+images/                          figures used in this README
 notebooks/
   Medical_trial_Project.ipynb    data extraction through model comparison
   NN_from_Scratch_Project.ipynb  the neural network, derived and verified
